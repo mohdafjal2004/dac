@@ -1,11 +1,10 @@
 // Online Listings and Leads
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HListings from "../components/HListings";
 import HSelected from "../components/HSelected";
 
 const Header = () => {
   const [showOLL, setOLL] = useState(false);
-  console.log(showOLL);
   const handleOLL = () => {
     setOLL(!showOLL);
   };
@@ -21,9 +20,9 @@ const Header = () => {
           >
             Listings & Leads
           </button>
-          <div className="relative  flex-1 text-center ">
+          <div className="relative  flex-1 text-center bg-white" >
             <p className="py-1">Selected Items</p>
-            <div className="absolute w-full flex-1 ">
+            <div className="absolute w-full flex-1 style={{ backgroundColor: bgColor }}">
               <HSelected />
             </div>
           </div>

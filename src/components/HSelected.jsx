@@ -14,8 +14,8 @@ const HSelected = () => {
     setShowSelected(!showSelected);
   };
   return (
-    <div className="  w-full">
-      <div className=" w-full   text-sm relative ">
+    <div className="  w-full bg-white">
+      <div className=" w-full   text-sm relative backdrop-blur-3xl ">
         {/* DropDown and Sort */}
         <div className="flex  justify-between  md:gap-  gap-1 md:flex-1">
           {/* DropDown Items */}
@@ -68,7 +68,7 @@ const HSelected = () => {
         {/* Selected Items */}
         <div className="text-left text-xs font-bold md:font-semibold text-slate-600 mt-[2px]">
           <p
-            className="font-extrabold cursor-pointer"
+            className="font-extrabold cursor-pointer p-2"
             onClick={handleSelectedView}
           >
             Selected : <span className="text-[#eaa162]">4</span>
@@ -77,7 +77,7 @@ const HSelected = () => {
           <div
             className={` ${
               showSelected ? "h-24 md:h-20 lg:h-28 xl:h-44 2xl:h-52" : "h-0 "
-            }  overflow-scroll `}
+            }  overflow-scroll absolute scrollbar-hide`}
           >
             <div className="flex flex-col gap-1 bg-[#f8e1cd] md:bg-white">
               <p className="flex justify-between px-2 border-b-[2px] border-slate-400 border-r-[2px] rounded-[4px] py-[2px] shadow-[2px_2px_9px_rgb(0,0,0,0.3)]">

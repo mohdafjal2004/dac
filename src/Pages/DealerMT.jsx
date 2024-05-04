@@ -8,7 +8,7 @@ const DealerMT = () => {
   };
   return (
     <div className=" border-2 border-black md:border-none ">
-      <div className="fixed md:static w-1/2 top-8 md:hidden">
+      <div className="fixed md:static w-1/2 top-8 left-0 md:hidden">
         <p
           className="bg-[#f8e1cd] py-[1px] text-slate-600 font-semibold text-center"
           onClick={handleShowDMT}

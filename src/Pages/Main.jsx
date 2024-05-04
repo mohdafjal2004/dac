@@ -5,13 +5,13 @@ import InventoryData from "../components/InvertoryData.json";
 const Main = () => {
   return (
     <div className="w-full">
-      <div className="mt-20">
+      <div className="mt-24">
         {/* Search Bar */}
         <div className="flex md:px-8 lg:px-16 xl:px-20">
           {/* All selection field */}
           <div
             className="inline-flex items-center
-           justify-between border-2 border-black gap-2 px-1
+           justify-between border-2 border-black gap-2 px-1 rounded-t-md rounded-tr-none
           bg-[#eaa162] "
           >
             <span>All</span>
@@ -25,7 +25,7 @@ const Main = () => {
           />
           <div>
             {/* Search Button */}
-            <div className="border-2 border-black bg-[#eaa162]">
+            <div className="border-2 border-black bg-[#eaa162] rounded-tr-md">
               <img src={search} alt={search} className="h-6 p-1" />
             </div>
           </div>
@@ -39,7 +39,7 @@ const Main = () => {
                 className="md:px-8 lg:relative lg:px-16 xl:px-20"
               >
                 <Inventory data={car} index={index + 1} />
-                <div className="absolute -left-8 top-[70px] w-40 text-center">
+                <div className="absolute -left-8 top-[70px] w-40 text-center hidden lg:block">
                   <p className="absolute left-10">
                     <span className="border-2 border-slate-400 p-1  rounded-full">{index + 1}</span>
                   </p>
